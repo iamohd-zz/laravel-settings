@@ -1,6 +1,6 @@
 {
     "name": "smartisan/laravel-settings",
-    "description": "Laravel Application & Models Settings",
+    "description": "App & Models Settings for Laravel",
     "keywords": [
         "laravel-settings"
     ],
