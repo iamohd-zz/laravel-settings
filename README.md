@@ -138,6 +138,28 @@ Settings::except('k1', 'k2')->for($model)->group('name')->all();
 Settings::except('k1')->for($model)->group('name')->all();
 ```
 
+### Forget Entry
+
+You can remove entries by calling forget method.
+
+```php
+Settings::forget('key');
+
+Settings::for($model)->group('name')->forget('key');
+```
+
+### Determine Existance
+
+You can determine whether the given settings entry key exists or not
+
+```php
+Settings::exist('key');
+
+Settings::for($model)->exist('key');
+
+Settings::for($model)->group('name')->exist('key');
+```
+
 ### Helper Method
 
 The package also ships with a settings helper method, you can use it instead of using Settings Facade
