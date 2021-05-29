@@ -11,7 +11,7 @@ return [
     | package ships with database repository.
     |
     */
-    'default'      => env('SETTINGS_REPOSITORY_DEFAULT', 'database'),
+    'default' => env('SETTINGS_REPOSITORY_DEFAULT', 'database'),
 
     /*
     |--------------------------------------------------------------------------
@@ -24,9 +24,9 @@ return [
     */
     'repositories' => [
         'database' => [
-            'handler'    => Smartisan\Settings\Repositories\DatabaseRepository::class,
+            'handler' => Smartisan\Settings\Repositories\DatabaseRepository::class,
             'connection' => null,
-            'table'      => 'settings',
+            'table' => 'settings',
         ],
     ],
 
@@ -40,10 +40,10 @@ return [
     | caching driver set by your application.
     |
     */
-    'cache'        => [
+    'cache' => [
         'enabled' => env('SETTINGS_CACHE_ENABLED', false),
-        'store'   => null,
-        'prefix'  => null,
+        'store' => null,
+        'prefix' => null,
     ],
 
     /*
@@ -55,8 +55,8 @@ return [
     | casts handler to use for every corresponding instances.
     |
     */
-    'casts'        => [
-        Carbon\Carbon::class       => \Smartisan\Settings\Casts\CarbonCast::class,
+    'casts' => [
+        Carbon\Carbon::class => \Smartisan\Settings\Casts\CarbonCast::class,
         Carbon\CarbonPeriod::class => \Smartisan\Settings\Casts\CarbonPeriodCast::class,
     ],
 
