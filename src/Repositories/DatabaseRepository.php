@@ -192,12 +192,12 @@ class DatabaseRepository extends Repository
         return DB::connection($this->connection)
             ->table($this->table)
             ->updateOrInsert([
-                'key'              => $key,
-                'group'            => $this->entryFilter->getGroup(),
+                'key' => $key,
+                'group' => $this->entryFilter->getGroup(),
                 'settingable_type' => $this->entryFilter->getModel() ? get_class($this->entryFilter->getModel()) : null,
-                'settingable_id'   => $this->entryFilter->getModel() ? $this->entryFilter->getModel()->getKey() : null
+                'settingable_id' => $this->entryFilter->getModel() ? $this->entryFilter->getModel()->getKey() : null,
             ], [
-                'payload'    => json_encode($this->castHandler->handle($value)),
+                'payload' => json_encode($this->castHandler->handle($value)),
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);

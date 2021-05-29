@@ -26,7 +26,7 @@ class CastHandlerTest extends TestCase
 
         $payload = $castHandler->handle([
             'k1' => $date,
-            'k2' => $period
+            'k2' => $period,
         ]);
 
         $this->assertSame('Carbon\Carbon', Arr::get($payload, 'k1')['$cast']);

@@ -61,7 +61,7 @@ class SettingsTest extends TestCase
                 'k4' => [1, 2, 3],
                 'k5' => [
                     'k6' => [4, 5, 6],
-                ]
+                ],
             ],
         ]);
 
@@ -82,7 +82,7 @@ class SettingsTest extends TestCase
             'k2' => [
                 'k3' => [
                     'period' => $period,
-                ]
+                ],
             ],
         ]);
 
@@ -105,8 +105,9 @@ class SettingsTest extends TestCase
         $this->assertNull(Settings::get('k3'));
         $this->assertSame('default value', Settings::get('k3', 'default value'));
 
-        $this->assertSame([
-            'k1' => 'v1', 'k2' => 'v2', 'k3' => 'default value', 'k4' => 'default value'],
+        $this->assertSame(
+            [
+            'k1' => 'v1', 'k2' => 'v2', 'k3' => 'default value', 'k4' => 'default value', ],
             Settings::get(['k1', 'k2', 'k3', 'k4'], 'default value')
         );
     }

@@ -17,7 +17,7 @@ class CarbonPeriodCast implements Castable
     {
         return [
             'start' => $payload->getStartDate(),
-            'end'   => $payload->getEndDate(),
+            'end' => $payload->getEndDate(),
         ];
     }
 
@@ -30,7 +30,8 @@ class CarbonPeriodCast implements Castable
     public function get($payload)
     {
         return new CarbonPeriod(
-            $payload['start'], $payload['end']
+            $payload['start'],
+            $payload['end']
         );
     }
 }
