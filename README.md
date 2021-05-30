@@ -202,19 +202,19 @@ use Smartisan\Settings\Contracts\Repository;
 
 class FileRepository implements Repository 
 {
-    public function get($key,$default = null){
+    public function get($key,$default = null) {
         //
     }
     
-    public function set($key,$value = null){
+    public function set($key,$value = null) {
         //
     }
     
-    public function forget($key){
+    public function forget($key) {
         //
     }
     
-    public function all(){
+    public function all() {
         //
     }
 }
@@ -248,11 +248,11 @@ use Smartisan\Settings\Contracts\Castable;
 
 class CustomCast implements Castable
 {
-    public function set($payload){
+    public function set($payload) {
         //
     }
     
-    public function get($payload){
+    public function get($payload) {
         //
     }}
 ```
