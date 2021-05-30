@@ -4,8 +4,8 @@
 [![GitHub Tests Action Status](https://github.com/iamohd/laravel-settings/workflows/run-tests/badge.svg)](https://github.com/iamohd/laravel-settings/actions?query=workflow%3Arun-tests)
 [![Total Downloads](https://img.shields.io/packagist/dt/smartisan/laravel-settings.svg?style=flat-square)](https://packagist.org/packages/smartisan/laravel-settings)
 
-This package allows you to store application wide or model specific Laravel settings in your database. Settings values
-are casted and stored properly. You can also define your own casts and store repository.
+This package allows you to store application wide and model specific Laravel settings. Settings values
+are type-cast and stored properly. You can also define your own casts and store repository.
 
 ## Installation
 
@@ -40,7 +40,7 @@ helper method and via HasSettings trait on your models.
 
 ### Store Settings
 
-You can set single entry, or multiple entries of settings. The values of objects will be casted according to the rules
+You can set single entry, or multiple entries of settings. The values of objects will be cast according to the rules
 defined in settings.php config file.
 
 * One Entry
