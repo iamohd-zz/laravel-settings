@@ -24,7 +24,7 @@ php artisan vendor:publish --provider="Smartisan\Settings\SettingsServiceProvide
 Publish the migration file with:
 
 ```bash
-php artisan vendor:publish --provider="Smartisan\Settings\SettingsServiceProvider" --tag="migration"
+php artisan vendor:publish --provider="Smartisan\Settings\SettingsServiceProvider" --tag="migrations"
 ```
 
 And finally run the migration with:
