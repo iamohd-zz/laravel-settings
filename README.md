@@ -254,7 +254,8 @@ class CustomCast implements Castable
     
     public function get($payload) {
         //
-    }}
+    }
+}
 ```
 
 2. Add the casts to the array of casts in settings config file
