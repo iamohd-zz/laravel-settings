@@ -37,7 +37,7 @@ class DatabaseRepository extends Repository
      */
     public function __construct()
     {
-        $this->connection = config('database.connection');
+        $this->connection = config('settings.repositories.database.connection');
 
         $this->table = config('settings.repositories.database.table');
 
